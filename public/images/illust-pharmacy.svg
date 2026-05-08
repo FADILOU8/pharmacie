@@ -1,0 +1,27 @@
+<svg width="620" height="460" viewBox="0 0 620 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="460" rx="32" fill="#EAF2FF"/>
+  <path d="M106 318H514V422H106V318Z" fill="#C8D9FF"/>
+  <path d="M110 320H510V392H110V320Z" fill="#F9FBFF"/>
+  <path d="M166 268H212V318H166V268Z" fill="#63B3ED"/>
+  <path d="M232 212H278V318H232V212Z" fill="#2B6CB0"/>
+  <path d="M298 182H344V318H298V182Z" fill="#4299E1"/>
+  <path d="M364 244H410V318H364V244Z" fill="#3182CE"/>
+  <path d="M430 184H476V318H430V184Z" fill="#2563EB"/>
+  <path d="M140 142H212V194H140V142Z" fill="#34D399"/>
+  <path d="M296 108H368V194H296V108Z" fill="#38BDF8"/>
+  <path d="M452 158H524V194H452V158Z" fill="#60A5FA"/>
+  <circle cx="492" cy="111" r="33" fill="#FBBF24" opacity="0.95"/>
+  <path d="M222 104C222 129.315 201.315 150 176 150C150.685 150 130 129.315 130 104C130 78.6847 150.685 58 176 58C201.315 58 222 78.6847 222 104Z" fill="#ffffff" stroke="#3B82F6" stroke-width="12"/>
+  <path d="M364 102C364 128.926 339.926 153 313 153C286.074 153 262 128.926 262 102C262 75.0741 286.074 51 313 51C339.926 51 364 75.0741 364 102Z" fill="#ffffff" stroke="#22D3EE" stroke-width="12"/>
+  <path d="M332 324H412" stroke="#2563EB" stroke-width="16" stroke-linecap="round"/>
+  <path d="M332 358H412" stroke="#2563EB" stroke-width="16" stroke-linecap="round"/>
+  <path d="M332 390H412" stroke="#2563EB" stroke-width="16" stroke-linecap="round"/>
+  <path d="M180 210C180 206.686 182.686 204 186 204H292C295.314 204 298 206.686 298 210V252H180V210Z" fill="#C8D9FF"/>
+  <path d="M176 266H304" stroke="#2563EB" stroke-width="10" stroke-linecap="round"/>
+  <path d="M176 286H304" stroke="#2563EB" stroke-width="10" stroke-linecap="round"/>
+  <path d="M84 96C84 68.3868 106.387 46 134 46H196C223.613 46 246 68.3868 246 96V138H84V96Z" fill="#fff" stroke="#0EA5E9" stroke-width="12"/>
+  <path d="M414 284H506V360H414V284Z" fill="#93C5FD"/>
+  <path d="M430 300H490V340H430V300Z" fill="#1D4ED8"/>
+  <path d="M64 234C64 216.908 78.908 202 96 202H140C157.092 202 172 216.908 172 234V278H64V234Z" fill="#F8FAFC" stroke="#60A5FA" stroke-width="10"/>
+  <circle cx="92" cy="190" r="22" fill="#FBBF24"/>
+</svg>
