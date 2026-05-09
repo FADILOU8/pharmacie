@@ -14,8 +14,8 @@ use App\Http\Controllers\ChatbotController;
 use App\Http\Controllers\ExportController;
 use Illuminate\Support\Facades\Route;
 
-// Guest routes
-Route::middleware('guest')->group(function () {
+// Guest routes — rate-limited to 10 requests/minute per IP to prevent brute-force.
+Route::middleware(['guest', 'throttle:10,1'])->group(function () {
     Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
     Route::post('/register', [AuthController::class, 'register']);
     Route::get('/login', [AuthController::class, 'showLogin'])->name('login');

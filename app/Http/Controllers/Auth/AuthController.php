@@ -46,16 +46,27 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, false)) {
+            // Regenerate the session ID after a successful login to prevent
+            // session fixation attacks.
+            $request->session()->regenerate();
+
             return redirect()->route('dashboard')->with('success', 'Connexion réussie.');
         }
 
-        return back()->withErrors(['email' => 'Identifiants invalides.']);
+        // Use a generic error message to avoid leaking whether the email exists.
+        return back()->withErrors(['email' => 'Identifiants invalides.'])->onlyInput('email');
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
         Auth::logout();
+
+        // Invalidate the session and regenerate the CSRF token on logout to
+        // prevent session replay and CSRF token reuse.
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
         return redirect()->route('login')->with('success', 'Déconnexion réussie.');
     }
 }

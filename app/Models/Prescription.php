@@ -30,5 +30,9 @@ class Prescription extends Model
 
     protected $casts = [
         'prescription_date' => 'date',
+        // Encrypt sensitive medical data at rest.
+        // doctor_name and medicines contain PHI — encrypted with AES-256-CBC via APP_KEY.
+        'doctor_name' => 'encrypted',
+        'medicines'   => 'encrypted',
     ];
 }
